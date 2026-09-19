@@ -1,0 +1,1782 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <meta name="theme-color" content="#12372A" />
+    <title>GathHeal Capsules — Ayurvedic Herbal Wellness Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Halant:wght@400;600;700&family=Hind:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <style>
+      :root {
+        --green: #09070d;
+        --green2: #1f5a43;
+        --leaf: #4f7b58;
+        --sage: #dfe9db;
+        --cream: #fbf7ec;
+        --card: #fff;
+        --gold: #d39b3a;
+        --gold2: #efc76f;
+        --clay: #b85c38;
+        --ink: #211d17;
+        --muted: #665f54;
+        --line: #e6ddca;
+        --w: 450px;
+        --r: 18px;
+        --shadow: 0 12px 30px rgba(25, 42, 31, 0.11);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Hind", sans-serif;
+        background: #d7ddcf;
+        color: var(--ink);
+        display: flex;
+        justify-content: center;
+      }
+      button,
+      input {
+        font: inherit;
+      }
+      .page {
+        width: 100%;
+        max-width: var(--w);
+        background: var(--cream);
+        min-height: 100vh;
+        overflow: hidden;
+        padding-bottom: 65px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Halant", serif;
+        line-height: 1.25;
+        font-size: 28px;
+      }
+      .topbar {
+        height: 60px;
+        padding: 0 16px;
+        background: var(--green);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(239, 199, 111, 0.45);
+      }
+      .brand {
+        font-family: "Halant", serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--gold2);
+      }
+      .brand small {
+        display: block;
+        font:
+          500 9px/1 "Hind",
+          sans-serif;
+        letter-spacing: 1.2px;
+        color: #dce7df;
+      }
+      .topbar a {
+        font-size: 13px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        padding: 7px 11px;
+      }
+      .banner {
+        width: 100%;
+        background: var(--green);
+        overflow: hidden;
+      }
+
+      .banner img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 9 / 16;
+        object-fit: contain;
+        object-position: center;
+        background: var(--cream);
+      }
+      .kicker {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        color: #B85C38;
+      }
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 18px;
+        background: var(--clay);
+        color: #fff;
+        border-radius: 12px;
+        padding: 13px 20px;
+        font-weight: 700;
+        box-shadow: 0 10px 20px rgba(184, 92, 56, 0.25);
+      }
+      section {
+        padding: 20px 20px;
+      }
+      .light {
+        background: var(--cream);
+      }
+      .dark {
+        background: var(--green);
+        color: #fff;
+      }
+      .soft {
+        background: #fbf7ec;
+      }
+      .section-head {
+        text-align: center;
+        margin-bottom: 22px;
+      }
+      .section-head h2 {
+        font-size: 28px;
+        margin-top: 5px;
+      }
+      .dark .section-head h2 {
+        color: #fff;
+      }
+      .section-head p {
+        margin-top: 7px;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.55;
+      }
+      .dark .section-head p {
+        color: #d7e3d9;
+      }
+      .cards {
+        display: grid;
+        gap: 12px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--r);
+        padding: 17px;
+        box-shadow: var(--shadow);
+      }
+      .dark .card {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(239, 199, 111, 0.24);
+        box-shadow: none;
+      }
+      .card h3 {
+        font-size: 20px;
+        color: var(--green);
+        margin-bottom: 5px;
+      }
+      .dark .card h3 {
+        color: var(--gold2);
+      }
+      .card p,
+      .card li {
+        font-size: 15px;
+        line-height: 1.58;
+        color: var(--muted);
+      }
+      .dark .card p,
+      .dark .card li {
+        color: #dce6de;
+      }
+      .checklist {
+        list-style: none;
+        display: grid;
+        gap: 9px;
+      }
+      .checklist li {
+        position: relative;
+        padding-left: 27px;
+      }
+      .checklist li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--leaf);
+        font-weight: 800;
+      }
+      .dark .checklist li:before {
+        color: var(--gold2);
+      }
+      .problem-visual {
+        width: 100%;
+        margin: 4px auto 0;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: var(--shadow);
+      }
+      .problem-visual img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      .causes .card {
+        border-left: 4px solid var(--gold);
+      }
+      .quote-box {
+        padding: 22px 18px;
+        border-radius: 20px;
+        background: var(--green);
+        color: #fff;
+        text-align: center;
+      }
+      .quote-box p {
+        font-family: "Halant", serif;
+        font-size: 20px;
+        line-height: 1.45;
+      }
+      .quote-box strong {
+        color: var(--gold2);
+      }
+      .product-wrap {
+        text-align: center;
+      }
+      .product-panel{position:relative;overflow:hidden;padding:20px 16px;border:1px solid rgba(239,199,111,.35);border-radius:24px;background:rgba(255,255,255,.055);box-shadow:0 16px 34px rgba(0,0,0,.18)}
+      .product-panel:before{content:"";position:absolute;top:-55px;right:-55px;width:150px;height:150px;border-radius:50%;background:rgba(239,199,111,.08)}
+      .product-panel .section-head{position:relative;z-index:1;margin-bottom:16px}
+      .product-panel .section-head h2{font-size:28px}
+      .product-panel .section-head p{color:var(--gold2);font:600 17px/1.4 "Halant",serif}
+      .product-img {
+        position:relative;
+        width:100%;
+        height:240px;
+        margin:0 auto 17px;
+        border-radius:18px 70px 18px 70px;
+        overflow: hidden;
+        border:3px solid var(--gold2);
+        box-shadow:0 14px 28px rgba(0,0,0,.22);
+        background: #fff;
+      }
+      .product-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .product-intro{margin:0 auto 17px;color:#dce6de;font-size:16px;line-height:1.55;text-align:left}
+      .product-purpose{display:block;margin-bottom:10px;color:var(--gold2);font-size:16px;text-align:left}
+      .product-benefits{display:grid;grid-template-columns:1fr 1fr;gap:9px;list-style:none;text-align:left}
+      .product-benefits li{position:relative;min-height:106px;padding:39px 11px 11px;border:1px solid rgba(239,199,111,.24);border-radius:14px;background:rgba(255,255,255,.075);color:#e5eee7;font-size:16px;line-height:1.38}
+      .product-benefits li:before{content:"✓";position:absolute;left:11px;top:10px;width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:var(--gold2);color:var(--green);font-size:16px;font-weight:800}
+      .product-routine{margin-top:17px;padding:13px 10px;border-top:1px solid rgba(239,199,111,.25);border-bottom:1px solid rgba(239,199,111,.25);color:#fff;font:700 18px/1.35 "Halant",serif}
+      .product-learn{margin-top:15px;display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;background:var(--clay);color:#fff;font-size:14px;font-weight:800;box-shadow:0 9px 20px rgba(0,0,0,.22)}
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7px;
+        margin-top: 15px;
+      }
+      .pill {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: var(--sage);
+        color: var(--green);
+      }
+      .guidance-cards{display:grid;gap:16px;margin:0 auto;max-width:430px}
+      .guidance-card{position:relative;overflow:hidden;border:1px solid rgba(18,55,42,.14);border-radius:20px;background:#fff;box-shadow:0 12px 28px rgba(25,42,31,.11);transition:transform .2s ease,box-shadow .2s ease}
+      .guidance-card-image{position:relative;width:100%;aspect-ratio:3/2;overflow:hidden;background:var(--sage)}
+      .guidance-card-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+      .guidance-card-footer{position:relative;display:flex;align-items:center;justify-content:center;min-height:66px;padding:12px 16px;background:var(--green);color:#fff;text-align:center}
+      .guidance-card-footer h3{margin:0;color:#fff;font-family:"Hind",sans-serif;font-size:18px;line-height:1.25}
+      @media (hover:hover){.guidance-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(25,42,31,.16)}}
+
+      .before-after{
+        display:grid;
+        gap:16px;
+      }
+      .ba-card{
+        overflow:hidden;
+        border:1px solid var(--line);
+        border-radius:18px;
+        background:#fff;
+        box-shadow:var(--shadow);
+      }
+      .ba-title{
+        padding:11px 14px;
+        text-align:center;
+        background:var(--green);
+        color:var(--gold2);
+        font-weight:700;
+        font-size:16px;
+      }
+      .ba-images{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:8px;
+        padding:10px;
+        background:#f7f2e7;
+      }
+      .ba-image{
+        position:relative;
+        overflow:hidden;
+        aspect-ratio:1/1;
+        border-radius:13px;
+        border:1px solid var(--line);
+        background:#eee;
+      }
+      .ba-image img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position:center;
+      }
+      .ba-label{
+        position:absolute;
+        left:8px;
+        bottom:8px;
+        padding:5px 9px;
+        border-radius:999px;
+        color:#fff;
+        font-size:10px;
+        font-weight:800;
+        letter-spacing:.5px;
+        box-shadow:0 4px 10px rgba(0,0,0,.18);
+      }
+      .ba-before .ba-label{background:#8b4a35}
+      .ba-after .ba-label{background:var(--green2)}
+      .ba-info{
+        padding:12px 14px 14px;
+        text-align:center;
+      }
+      .ba-info strong{
+        display:block;
+        color:var(--green);
+        font-size:17px;
+        margin-bottom:3px;
+      }
+      .ba-info p{
+        color:var(--muted);
+        font-size:16px;
+        line-height:1.45;
+      }
+
+      .stories {
+        display: grid;
+        gap: 12px;
+      }
+      .story {
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.07);
+        border: 1px solid rgba(239, 199, 111, 0.25);
+      }
+      .story-head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+      .avatar {
+        width: 80px;
+        height: 80px;
+        flex: 0 0 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: var(--gold2);
+        border: 3px solid var(--gold2);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+      }
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+      }
+      .story strong {
+        font-size: 17px;
+        color: #fff;
+      }
+      .story small {
+        display: block;
+        color: #cbd9cf;
+      }
+      .story p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #e4ebe5;
+      }
+      .herbs {
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 12px;
+      }
+      .herb {
+        overflow: hidden;
+        border-radius: 18px;
+        background: #fff;
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+      }
+      .herb-img {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background: #edf3e9;
+      }
+      .herb-img img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+      }
+      .herb-content {
+        padding: 12px 10px 14px;
+        text-align: center;
+      }
+      .herb h3 {
+        font-size: 19px;
+        color: var(--green);
+        margin-bottom: 4px;
+      }
+      .herb p {
+        font-size: 16px;
+        line-height: 1.45;
+        color: var(--muted);
+      }
+      .offer {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(160deg, #173c2d, #0d281e);
+        color: #fff;
+      }
+      .offer:before, .offer:after {
+        content: ""; position:absolute; border-radius:50%; pointer-events:none;
+        background:rgba(239,199,111,.09); animation:offerFloat 5s ease-in-out infinite;
+      }
+      .offer:before { width:150px;height:150px;top:-65px;right:-45px; }
+      .offer:after { width:105px;height:105px;bottom:-42px;left:-35px;animation-delay:-2.2s; }
+      .offer-box {
+        position:relative; z-index:1;
+        border: 1px solid rgba(239, 199, 111, 0.48);
+        border-radius: 22px; padding: 22px 16px;
+        background: rgba(255, 255, 255, 0.065); text-align: center;
+        box-shadow:0 18px 38px rgba(0,0,0,.18);
+      }
+      .offer-box .kicker{animation:offerFade .7s ease both}
+      .offer-box h2{animation:offerFade .7s .08s ease both}
+      .discount {
+        display:inline-block; font:700 44px/1 "Halant",serif; color:var(--gold2);
+        margin:12px 0 17px; padding:8px 17px 5px; position:relative;
+        animation:offerPulse 2.1s ease-in-out infinite;
+      }
+      .discount:after{content:"";position:absolute;left:10%;right:10%;bottom:0;height:3px;border-radius:99px;background:var(--gold);}
+      .offer-notes{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:4px 0 18px;text-align:left}
+      .offer-note{
+        position:relative; min-height:92px; padding:14px 12px 12px; border-radius:4px 4px 12px 4px;
+        background:#fff4bd; color:#173c2d; box-shadow:0 9px 18px rgba(0,0,0,.18);
+        transform:rotate(-1.6deg); animation:noteIn .55s ease both;
+      }
+      .offer-note:nth-child(even){background:#e6f0d9;transform:rotate(1.5deg)}
+      .offer-note:nth-child(3){transform:rotate(1deg)} .offer-note:nth-child(4){transform:rotate(-1deg)}
+      .offer-note:nth-child(2){animation-delay:.08s}.offer-note:nth-child(3){animation-delay:.16s}.offer-note:nth-child(4){animation-delay:.24s}.offer-note:nth-child(5){animation-delay:.32s}.offer-note:nth-child(6){animation-delay:.40s}
+      .offer-note:before{content:"";position:absolute;width:34px;height:9px;top:-5px;left:50%;transform:translateX(-50%) rotate(-2deg);background:rgba(239,199,111,.72);box-shadow:0 2px 4px rgba(0,0,0,.08)}
+      .offer-note i{display:block;font-size:20px;color:var(--green2);margin-bottom:7px}
+      .offer-note strong{display:block;font-size:14px;line-height:1.25}
+      .offer-note small{display:block;margin-top:3px;font-size:11px;line-height:1.25;color:#5e624e}
+      .offer .pill-row{margin-top:2px}.offer .cta{animation:ctaGlow 1.8s ease-in-out infinite}
+      @keyframes offerFade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+      @keyframes noteIn{from{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1}}
+      @keyframes offerPulse{50%{transform:scale(1.055)}}
+      @keyframes ctaGlow{50%{box-shadow:0 10px 28px rgba(239,199,111,.42)}}
+      @keyframes offerFloat{50%{transform:translateY(12px) scale(1.08)}}
+      @media (prefers-reduced-motion:reduce){.offer *,.offer:before,.offer:after{animation:none!important}}
+      .order {
+        background: var(--green);
+        color: #fff;
+      }
+      .form-card {
+        background: #fff;
+        border: 2px solid var(--gold);
+        border-radius: 22px;
+        padding: 24px 18px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
+      .field {
+        margin-bottom: 14px;
+      }
+      .field label {
+        display: block;
+        color: var(--green);
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+      .field input {
+        width: 100%;
+        height: 48px;
+        border: 1.5px solid var(--line);
+        border-radius: 11px;
+        padding: 0 13px;
+        background: #fffdf7;
+        outline: none;
+      }
+      .field input:focus {
+        border-color: var(--gold);
+      }
+      .err {
+        display: none;
+        font-size: 11px;
+        color: #b3261e;
+        margin-top: 4px;
+      }
+      .err.show {
+        display: block;
+      }
+      .submit {
+        width: 100%;
+        border: 0;
+        border-radius: 12px;
+        background: var(--clay);
+        color: #fff;
+        padding: 14px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .secure {
+        text-align: center;
+        color: var(--muted);
+        font-size: 11px;
+        margin-top: 11px;
+      }
+      .faq-list {
+        display: grid;
+        gap: 9px;
+      }
+      .faq {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: #fff;
+        overflow: hidden;
+      }
+      .faq button {
+        width: 100%;
+        border: 0;
+        background: #fff;
+        padding: 14px;
+        text-align: left;
+        font-weight: 700;
+        color: var(--green);
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        cursor: pointer;
+      }
+      .faq .answer {
+        display: none;
+        padding: 0 14px 14px;
+        font-size: 14px;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+      .faq.open .answer {
+        display: block;
+      }
+      .disclaimer {
+        padding: 18px 20px 8px;
+        background: #fbf7ec;
+        text-align: center;
+        font-size: 8px;
+        line-height: 1.5;
+        color: #6d665a;
+        opacity: 0.62;
+      }
+      .policy-links {
+        padding: 4px 6px 10px;
+        background: #fbf7ec;
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        flex-wrap: nowrap;
+      }
+      .policy-links button {
+        border: 0;
+        background: none;
+        font-size: 6.3px;
+        color: #466a57;
+        opacity: 0.65;
+        padding: 2px;
+        white-space: nowrap;
+      }
+      .sticky {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 115%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: transform 0.38s cubic-bezier(.22,.61,.36,1), opacity 0.28s ease, visibility 0.38s;
+        will-change: transform, opacity;
+        width: 100%;
+        max-width: var(--w);
+        z-index: 80;
+        padding: 10px 14px;
+        background: #fff;
+        border-top: 1px solid var(--line);
+        box-shadow: 0 -8px 22px rgba(0, 0, 0, 0.12);
+      }
+      .sticky.show {
+        transform: translate(-50%, 0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+      .sticky a {
+        display: block;
+        background: var(--clay);
+        color: #fff;
+        text-align: center;
+        padding: 12px;
+        border-radius: 11px;
+        font-weight: 700;
+      }
+      .loading {
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: rgba(18, 55, 42, 0.5);
+        z-index: 300;
+      }
+      .loading.show {
+        display: flex;
+      }
+      .loading-box {
+        background: #fff;
+        border-radius: 16px;
+        padding: 22px 28px;
+        text-align: center;
+      }
+      .spinner {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto 10px;
+        border: 4px solid var(--line);
+        border-top-color: var(--green2);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .pp-overlay {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100dvh;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px;
+        background: rgba(13, 36, 27, 0.62);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .pp-overlay.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+      .pp-modal {
+        width: min(420px, calc(100vw - 28px));
+        max-height: 72dvh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        touch-action: pan-y;
+        -webkit-overflow-scrolling: touch;
+        background: #fff;
+        border-radius: 18px;
+        padding: 22px 17px;
+        position: relative;
+      }
+      .pp-close {
+        position: sticky;
+        top: 0;
+        float: right;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        border-radius: 50%;
+        background: #e4eee8;
+        color: var(--green);
+        cursor: pointer;
+      }
+      .pp-title,
+      .pp-mtitle {
+        font:
+          700 21px "Halant",
+          serif;
+        color: var(--green);
+        margin: 2px 38px 8px 0;
+      }
+      .pp-mtitle i {
+        margin-right: 7px;
+        color: var(--leaf);
+      }
+      .pp-badge,
+      .pp-mbadge {
+        display: inline-block;
+        background: #e4eee8;
+        color: var(--green);
+        font-size: 10px;
+        border-radius: 999px;
+        padding: 3px 9px;
+        margin-bottom: 10px;
+      }
+      .pp-mpara {
+        margin: 7px 0;
+      }
+      .pp-modal p,
+      .pp-modal li {
+        font-size: 13px;
+        line-height: 1.65;
+        color: #4d504c;
+      }
+      .pp-modal ul {
+        padding-left: 18px;
+        margin: 8px 0;
+      }
+      .pp-note,
+      .pp-mhl {
+        background: #edf4ef;
+        border-left: 3px solid var(--leaf);
+        padding: 9px 10px;
+        border-radius: 0 8px 8px 0;
+        margin: 10px 0;
+        color: #35483d;
+        font-size: 13px;
+        line-height: 1.55;
+      }
+      .pp-cgrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+        margin-top: 12px;
+      }
+      .pp-citem {
+        min-width: 0;
+        padding: 12px 9px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: #fffdf7;
+        text-align: center;
+      }
+      .pp-citem > i {
+        color: var(--leaf);
+        font-size: 21px;
+      }
+      .pp-clbl {
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 10px;
+      }
+      .pp-cval {
+        overflow-wrap: anywhere;
+        color: var(--green);
+        font-size: 12px;
+        font-weight: 700;
+      }
+      @media (max-width: 360px) {
+        section {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .herbs {
+          grid-template-columns: 1fr;
+        }
+        .policy-links button {
+          font-size: 5.6px;
+        }
+      }
+
+      .emotional-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 16px;
+      }
+      .emotional-card {
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+      }
+      .emotional-card img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: center;
+      }
+      .emotional-card h3 {
+        min-height: 72px;
+        padding: 12px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--green);
+        font-size: 16px;
+        line-height: 1.3;
+      }
+
+      /* How It Works — alternating image timeline */
+      .how-intro{margin:-8px auto 22px;color:#dce6de;font-size:16px;line-height:1.55;text-align:center}
+      .how-flow{position:relative;display:grid;gap:22px;max-width:410px;margin:0 auto}
+      .how-flow:before{content:"";position:absolute;left:50%;top:62px;bottom:62px;width:2px;background:repeating-linear-gradient(to bottom,var(--gold2) 0 5px,transparent 5px 10px);transform:translateX(-50%);opacity:.75}
+      .how-step{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr);align-items:center;min-height:150px}
+      .how-node{position:relative;z-index:3;grid-column:2;width:28px;height:28px;margin:auto;display:grid;place-items:center;border:3px solid var(--green);border-radius:50%;background:var(--gold2);color:var(--green);font-size:9px;font-weight:800;box-shadow:0 0 0 2px var(--gold2)}
+      .how-card-img{grid-column:1;grid-row:1;width:100%;height:165px;overflow:hidden;border:2px solid var(--gold2);border-radius:12px;background:var(--sage);box-shadow:0 9px 20px rgba(0,0,0,.2);transform:rotate(-1deg)}
+      .how-card-img img{width:100%;height:100%;object-fit:cover;object-position:center}
+      .how-card-body{grid-column:3;grid-row:1;width:100%;height:max-content;padding:9px 10px;display:flex;align-items:center;border:1px solid rgba(239,199,111,.27);border-radius:11px;background:rgba(255,255,255,.075);box-shadow:0 8px 18px rgba(0,0,0,.13)}
+      .how-step:nth-child(even) .how-card-img{grid-column:3;transform:rotate(1deg)}
+      .how-step:nth-child(even) .how-card-body{grid-column:1;text-align:left}
+      .how-card-body h3{width:100%;color:#ffffff;font-family:"Hind",sans-serif;font-size:16px;line-height:1.35;margin:0}
+      .how-card-body p{color:#dce6de;font-size:12px;line-height:1.48}
+      .how-card-body strong{color:#fff}
+      @media(max-width:360px){.how-step{grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);min-height:138px}.how-node{width:24px;height:24px}.how-card-img{height:100px}.how-card-body{padding:10px 8px}.how-card-body h3{font-size:13px}}
+    
+      /* How To Use — circular visual process */
+      .use-flow{
+        position:relative;
+        display:grid;
+        gap:18px;
+        width:100%;
+        max-width:410px;
+        margin:0 auto;
+      }
+      .use-flow:before{
+        content:"";
+        position:absolute;
+        left:68px;
+        top:70px;
+        bottom:70px;
+        width:3px;
+        background:linear-gradient(var(--gold2),rgba(239,199,111,.25));
+        border-radius:999px;
+      }
+      .use-step{
+        position:relative;
+        display:grid;
+        grid-template-columns:140px minmax(0,1fr);
+        gap:12px;
+        align-items:center;
+      }
+      .use-img{
+        position:relative;
+        z-index:2;
+        width:140px;
+        height:140px;
+        border-radius:50%;
+        overflow:hidden;
+        border:4px solid var(--gold2);
+        background:#fff;
+        box-shadow:0 8px 18px rgba(0,0,0,.22);
+      }
+      .use-img img{
+        width:100%;
+        height:100%;
+        display:block;
+        object-fit:cover;
+        object-position:center;
+      }
+      .use-num{
+        position:absolute;
+        right:5px;
+        bottom:5px;
+        width:27px;
+        height:27px;
+        display:grid;
+        place-items:center;
+        border-radius:50%;
+        background:var(--gold);
+        color:var(--green);
+        border:2px solid var(--green);
+        font-size:10px;
+        font-weight:800;
+      }
+      .use-body{
+        width:100%;
+        min-width:0;
+        padding:11px 12px;
+        border:1px solid rgba(239,199,111,.28);
+        border-radius:14px;
+        background:rgba(255,255,255,.07);
+      }
+      .use-body h3{
+        color:var(--gold2);
+        font-size:17px;
+        margin-bottom:3px;
+      }
+      .use-body p{
+        color:#dce6de;
+        font-size:16px;
+        line-height:1.5;
+      }
+
+      /* Quality & Trust — simple 2 × 2 circular cards */
+      .trust-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px;max-width:390px;margin:0 auto}
+      .trust-card{aspect-ratio:1;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:8px;background:#fff;border:2px solid var(--gold2);border-radius:50%;box-shadow:0 9px 22px rgba(25,42,31,.12)}
+      .trust-image{width:100%;height:100%;overflow:hidden;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#fff}
+      .trust-image img{width:100%;height:100%;display:block;object-fit:contain;object-position:center;padding:6px;border-radius:50%}
+      @media(max-width:360px){.trust-grid{gap:12px 8px}.trust-card{padding:7px}}
+
+      /* Problem section — visual symptom cards */
+      .problem-intro{max-width:390px;margin:0 auto 20px;text-align:center;color:var(--muted);font-size:16px;line-height:1.65}
+      .problem-subtitle{font-family:"Halant",serif;color:#fff;font-size:20px;line-height:1.3;text-align:center;margin:24px auto 20px;padding:9px 16px;border-radius:999px;background:var(--green);box-shadow:0 8px 20px rgba(18,55,42,.16)}
+      .problem-cards{position:relative;display:grid;gap:22px;max-width:405px;margin:0 auto;padding:4px 0}
+      .problem-cards:before{content:"";position:absolute;left:33px;top:38px;bottom:38px;width:2px;background:var(--green);opacity:.9}
+      .problem-card{--road-accent:var(--green);position:relative;display:grid;grid-template-columns:68px minmax(0,1fr);gap:14px;align-items:center;min-height:200px}
+      .problem-card:before{content:"";position:absolute;z-index:0;left:33px;top:50%;width:52px;height:2px;background:var(--green);transform:translateY(-50%)}
+      .problem-road-marker{position:relative;z-index:2;width:68px;height:68px;display:grid;place-items:center}
+      .problem-road-marker:before{content:"";position:absolute;inset:0;background:var(--road-accent);clip-path:polygon(28% 0,72% 0,100% 50%,72% 100%,28% 100%,43% 78%,82% 78%,96% 50%,82% 22%,43% 22%)}
+      .problem-card-number{position:relative;z-index:1;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;background:var(--green);color:#fff;border:4px solid var(--cream);font:800 21px/1 "Hind",sans-serif;box-shadow:0 4px 10px rgba(18,55,42,.18)}
+      .problem-card-body{position:relative;z-index:1;min-width:0;height:200px;padding:35px 8px 8px;border:2px solid var(--road-accent);border-radius:15px;background:#fff;overflow:hidden;box-shadow:0 7px 18px rgba(25,42,31,.08)}
+      .problem-card-body h3{position:absolute;z-index:2;left:-2px;top:-2px;max-width:calc(100% - 18px);min-width:74%;padding:8px 12px 7px;border-radius:15px 15px 15px 0;background:var(--road-accent);color:#fff;font-family:"Hind",sans-serif;font-size:15px;line-height:1.25;font-weight:700}
+      .problem-card-image{width:100%;height:100%;overflow:hidden;border-radius:8px;background:#edf3e9}
+      .problem-card-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+      @media(max-width:360px){.problem-cards{gap:18px}.problem-card{grid-template-columns:60px minmax(0,1fr);gap:10px;min-height:118px}.problem-cards:before{left:29px}.problem-card:before{left:29px;width:42px}.problem-road-marker{width:60px;height:60px}.problem-card-number{width:46px;height:46px;font-size:19px}.problem-card-body{height:118px}.problem-card-body h3{font-size:14px;padding-left:10px;padding-right:10px}}
+      /* Version 2 visual direction: near-black canvas with a premium purple accent system. */
+      :root{--green:#0a0710;--green2:#1a0f2d;--leaf:#a879ff;--sage:#eadcff;--cream:#0a0710;--card:#15101e;--gold:#a879ff;--gold2:#d2b5ff;--clay:#8d4dff;--ink:#faf7ff;--muted:#b9aec9;--line:rgba(210,181,255,.18);--shadow:0 14px 34px rgba(0,0,0,.3)}
+      body{background:#050407;color:var(--ink)}.page{background:var(--cream)}.topbar,.banner,.dark{background:linear-gradient(145deg,#0d0915,#180d28)}.light,.soft{background:#0b0810}.card,.ba-card,.form-card,.guidance-card{background:#15101e;border-color:var(--line);box-shadow:var(--shadow)}.card h3,.section-head h2,.product-panel .section-head h2{color:#fff}.card p,.card li,.section-head p,.problem-intro,.how-intro,.product-intro{color:var(--muted)}.kicker{color:var(--violet,#b77aff)}.cta,.product-learn,.submit{background:linear-gradient(110deg,#8d4dff,#5722bb);box-shadow:0 10px 24px rgba(141,77,255,.28)}.brand,.brand small,.dark .card h3,.dark .checklist li:before,.quote-box strong,.product-panel .section-head p,.product-purpose,.product-routine{color:#c7a4ff}.pill{background:#eadcff;color:#2c125e}.dark .card{background:rgba(255,255,255,.06);border-color:var(--line)}.dark .card p,.dark .card li{color:#c5bbd0}.causes .card{border-left-color:#a879ff}.quote-box{background:linear-gradient(145deg,#251139,#120b1b)}.faq{background:#15101e;border-color:var(--line)}.faq button{color:#fff}.faq .answer{color:var(--muted)}.offer,.order{background:linear-gradient(145deg,#1d0e2d,#0b0810)}.disclaimer,.policy-links{background:#07050a;color:#9e91aa}.sticky{background:rgba(9,7,13,.94);border-color:var(--line)}
+      .before-after,.stories,.offer{display:none}
+      img[src^="images/"]{display:none!important}.banner img{display:block!important}.product-img,.problem-card-image,.how-card-img,.guidance-card-image,.herb-img,.use-img,.trust-grid{display:none!important}.guidance-card{background:linear-gradient(145deg,#211638,#120e1b)}
+      .banner{padding:0!important;background:#050407!important;line-height:0}.banner img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center}
+      .faq:nth-child(2),.faq:nth-child(3),.faq:nth-child(6),.faq:nth-child(8){display:none}
+      #how-it-works{background:linear-gradient(160deg,#160d25,#09070d)!important;border-top:1px solid rgba(183,122,255,.25)!important}
+      #how-it-works .how-flow{gap:26px;max-width:430px}
+      #how-it-works .how-flow:before{background:repeating-linear-gradient(to bottom,#b77aff 0 6px,transparent 6px 12px)}
+      #how-it-works .how-step{grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr);min-height:170px}
+      #how-it-works .how-step:nth-child(5){display:none}
+      #how-it-works .how-card-img{display:grid!important;width:145px;height:145px;max-width:100%;justify-self:center;border:3px solid #b77aff;border-radius:50%;background:radial-gradient(circle,rgba(141,77,255,.3),#130d1c);box-shadow:0 0 0 7px rgba(141,77,255,.09),0 14px 28px rgba(0,0,0,.32);transform:none}
+      #how-it-works .how-step:nth-child(even) .how-card-img{transform:none}
+      #how-it-works .how-card-img:before{content:"ADD IMAGE";position:absolute;color:#9f83c8;font:700 9px Manrope,sans-serif;letter-spacing:1px}
+      #how-it-works .how-card-img{position:relative;place-items:center}
+      #how-it-works .how-card-img img{position:relative;z-index:1;display:block!important;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center}
+      #how-it-works .how-card-img img[style*="display: none"]{display:none!important}
+      #how-it-works .how-node{width:32px;height:32px;border-color:#100a18;background:#a65cff;color:#fff;box-shadow:0 0 0 2px #d2b5ff}
+      #how-it-works .how-card-body{padding:14px 12px;border-color:rgba(183,122,255,.3);border-radius:14px;background:linear-gradient(145deg,rgba(141,77,255,.15),rgba(255,255,255,.04))}
+      #how-it-works .how-card-body h3{font-size:17px}
+      #how-it-works .how-step:nth-child(even) .how-card-body{text-align:right}
+      @media(max-width:360px){#how-it-works .how-step{grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr);min-height:145px}#how-it-works .how-card-img{width:118px;height:118px}#how-it-works .how-card-body h3{font-size:14px}}
+      .expert-section{padding:48px 20px;background:radial-gradient(circle at 85% 10%,rgba(141,77,255,.22),transparent 34%),linear-gradient(160deg,#0d0914,#160d24)}
+      .expert-section .section-head{text-align:left;margin-bottom:22px}
+      .expert-section .section-head h2{font-size:31px}
+      .expert-card{overflow:hidden;border:1px solid rgba(183,122,255,.35);border-radius:26px;background:linear-gradient(145deg,#211436,#110b1b);box-shadow:0 20px 42px rgba(0,0,0,.34)}
+      .expert-photo{position:relative;width:100%;height:360px;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle,rgba(141,77,255,.28),#100a18);color:#9f83c8;font:700 11px Manrope,sans-serif;letter-spacing:1.4px}
+      .expert-photo:before{content:"AYURVEDA DOCTOR IMAGE";position:absolute}
+      .expert-photo:after{content:"VERIFIED EXPERT";position:absolute;z-index:2;left:16px;bottom:16px;padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(12,7,18,.82);color:#d9c0ff;font:700 10px Manrope,sans-serif;letter-spacing:1px;backdrop-filter:blur(8px)}
+      .expert-photo img{position:relative;z-index:1;display:block!important;width:100%;height:100%;object-fit:cover;object-position:center top}
+      .expert-content{position:relative;padding:26px 20px 22px}
+      .expert-content .doctor-label{color:#b77aff;font:700 12px Manrope,sans-serif;letter-spacing:1.1px;text-transform:uppercase}
+      .expert-content h3{margin:7px 0 14px;color:#fff;font:700 24px/1.25 Hind,sans-serif}
+      .expert-quote{padding:16px;border-left:3px solid #9f5cff;border-radius:0 14px 14px 0;background:rgba(141,77,255,.09);color:#d8cfe1;font-size:16px;line-height:1.7;font-style:italic}
+      .expert-sign{margin-top:17px;color:#fff;font-weight:700;text-align:right}
+      .ingredients-section{padding:48px 20px;background:linear-gradient(165deg,#0b0810,#150d22)}
+      .ingredients-section .section-head{text-align:left;margin-bottom:24px}
+      .ingredients-section .section-head h2{font-size:29px}
+      .ingredients-section .herbs{display:grid;grid-template-columns:1fr;gap:14px}
+      .ingredients-section .herb{display:grid;grid-template-columns:112px minmax(0,1fr);align-items:center;gap:16px;min-height:138px;padding:13px;border:1px solid rgba(183,122,255,.27);border-radius:20px;background:linear-gradient(135deg,#1c122c,#100b18);box-shadow:0 12px 26px rgba(0,0,0,.24)}
+      .ingredients-section .herb:nth-child(even){grid-template-columns:minmax(0,1fr) 112px}
+      .ingredients-section .herb:nth-child(even) .herb-img{grid-column:2;grid-row:1}
+      .ingredients-section .herb:nth-child(even) .herb-content{grid-column:1;grid-row:1;text-align:right}
+      .ingredients-section .herb-img{position:relative;display:grid!important;place-items:center;width:112px;height:112px;overflow:hidden;border:2px solid rgba(183,122,255,.48);border-radius:18px;background:radial-gradient(circle,rgba(141,77,255,.25),#110b1a);color:#9982b8;font:700 9px Manrope,sans-serif;letter-spacing:1px}
+      .ingredients-section .herb-img:before{content:"HERB IMAGE";position:absolute}
+      .ingredients-section .herb-img img{position:relative;z-index:1;display:block!important;width:100%;height:100%;object-fit:cover;object-position:center}
+      .ingredients-section .herb-img img[style*="display: none"]{display:none!important}
+      .ingredients-section .herb-content{padding:5px 3px}
+      .ingredients-section .herb-content h3{margin-bottom:6px;color:#d2b5ff;font:700 20px/1.25 Manrope,sans-serif}
+      .ingredients-section .herb-content p{color:#bdb2c9;font-size:15px;line-height:1.55}
+      @media(max-width:360px){.ingredients-section .herb,.ingredients-section .herb:nth-child(even){grid-template-columns:94px minmax(0,1fr);gap:12px}.ingredients-section .herb:nth-child(even){grid-template-columns:minmax(0,1fr) 94px}.ingredients-section .herb-img{width:94px;height:94px}.ingredients-section .herb-content h3{font-size:17px}.ingredients-section .herb-content p{font-size:12px}}
+      .how-use-section{padding:50px 20px;background:radial-gradient(circle at 10% 8%,rgba(141,77,255,.2),transparent 32%),linear-gradient(165deg,#100a19,#08060c)}
+      .how-use-section .section-head{text-align:left;margin-bottom:27px}
+      .how-use-section .section-head h2{font-size:31px}
+      .how-use-section .section-head p{font-family:Hind,sans-serif;font-size:17px;color:#d2b5ff}
+      .routine-steps{position:relative;display:grid;gap:18px}
+      .routine-steps:before{content:"";position:absolute;left:27px;top:50px;bottom:50px;width:2px;background:repeating-linear-gradient(to bottom,#a65cff 0 7px,transparent 7px 13px);opacity:.65}
+      .routine-card{position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);gap:15px;padding:19px;border:1px solid rgba(183,122,255,.28);border-radius:21px;background:linear-gradient(135deg,#1d122e,#100b18);box-shadow:0 13px 28px rgba(0,0,0,.25)}
+      .routine-number{position:relative;z-index:1;width:56px;height:56px;display:grid;place-items:center;border:4px solid #160e22;border-radius:17px;background:linear-gradient(135deg,#ac67ff,#682bce);color:#fff;font:800 15px Manrope,sans-serif;box-shadow:0 8px 18px rgba(0,0,0,.3)}
+      .routine-body{min-width:0;padding-top:2px}
+      .routine-body h3{margin-bottom:6px;color:#fff;font:700 20px/1.3 Hind,sans-serif}
+      .routine-body p{color:#bfb4cb;font-size:15px;line-height:1.55}
+      .routine-tag{display:inline-flex;align-items:center;margin-top:12px;padding:7px 10px;border:1px solid rgba(183,122,255,.25);border-radius:999px;background:rgba(141,77,255,.12);color:#d8c1ff;font-size:12px;font-weight:700}
+      .course-note{display:flex;align-items:flex-start;gap:11px;margin-top:21px;padding:17px;border:1px solid rgba(239,123,255,.35);border-radius:17px;background:linear-gradient(100deg,rgba(239,123,255,.12),rgba(141,77,255,.12));color:#f0e8f7;font-size:15px;line-height:1.6}
+      .course-note span{font-size:20px;line-height:1.2}
+      .trust-section{padding:48px 20px;background:radial-gradient(circle at 90% 5%,rgba(141,77,255,.2),transparent 32%),linear-gradient(165deg,#0b0810,#150d23)}
+      .trust-section .section-head{text-align:left;margin-bottom:23px}
+      .trust-section .section-head h2{font-size:30px}
+      .trust-intro{margin-bottom:22px;padding:16px;border-left:3px solid #9f5cff;border-radius:0 14px 14px 0;background:rgba(141,77,255,.09);color:#d6ccdf;font-size:16px;line-height:1.65}
+      .certificate-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+      .certificate-card{overflow:hidden;border:1px solid rgba(183,122,255,.3);border-radius:18px;background:linear-gradient(145deg,#1d132d,#100b18);box-shadow:0 12px 25px rgba(0,0,0,.25)}
+      .certificate-image{position:relative;width:100%;height:155px;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle,rgba(141,77,255,.22),rgba(255,255,255,.03));color:#9880b7;font:700 9px Manrope,sans-serif;letter-spacing:1px}
+      .certificate-image:before{content:"ADD CERTIFICATE";position:absolute}
+      .certificate-image img{position:relative;z-index:1;display:block!important;width:100%;height:100%;padding:8px;object-fit:contain;background:#f8f6fb}
+      .certificate-image img[style*="display: none"]{display:none!important}
+      .certificate-label{padding:12px 8px;border-top:1px solid rgba(183,122,255,.2);color:#fff;font-size:13px;font-weight:700;text-align:center}
+      .trust-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px}
+      .trust-badges span{padding:8px 11px;border:1px solid rgba(183,122,255,.28);border-radius:999px;background:rgba(141,77,255,.11);color:#d9c2ff;font-size:11px;font-weight:700}
+      .special-offer{position:relative;padding:52px 20px;background:radial-gradient(circle at 90% 5%,rgba(239,123,255,.2),transparent 32%),linear-gradient(155deg,#1a0c29,#09060e);overflow:hidden}
+      .special-offer:before{content:"";position:absolute;width:220px;height:220px;right:-120px;bottom:-120px;border:1px solid rgba(183,122,255,.2);border-radius:50%;box-shadow:0 0 0 30px rgba(141,77,255,.035),0 0 0 60px rgba(141,77,255,.025)}
+      .special-offer-box{position:relative;z-index:1;padding:25px 18px;border:1px solid rgba(183,122,255,.4);border-radius:26px;background:linear-gradient(145deg,rgba(39,20,60,.92),rgba(15,9,23,.96));box-shadow:0 20px 45px rgba(0,0,0,.36)}
+      .offer-sticker{position:absolute;z-index:5;right:-5px;top:58px;width:90px;height:90px;display:grid;place-items:center;text-align:center;border:3px solid #f5eaff;border-radius:50%;background:linear-gradient(145deg,#dd8cff,#6c26d5);color:#fff;transform:rotate(10deg);box-shadow:0 12px 28px rgba(0,0,0,.4),inset 0 0 0 5px rgba(255,255,255,.12),0 0 25px rgba(183,122,255,.32)}
+      .offer-sticker strong{display:block;font:800 22px/1 Manrope,sans-serif;letter-spacing:-1px}.offer-sticker small{display:block;margin-top:4px;font:800 8px/1 Manrope,sans-serif;letter-spacing:1.2px;text-transform:uppercase}
+      .offer-sticker:before,.offer-sticker:after{content:"";position:absolute;inset:-6px;border:2px dashed rgba(239,219,255,.7);border-radius:50%}
+      .offer-sticker:after{inset:7px;border-style:solid;border-width:1px;opacity:.55}
+      .special-offer.in-view .offer-sticker{animation:stickerFloat 3s ease-in-out infinite}
+      .offer-fire{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(239,123,255,.3);border-radius:999px;background:rgba(239,123,255,.1);color:#efb4ff;font:700 11px Manrope,sans-serif;letter-spacing:1px;text-transform:uppercase}
+      .offer-fire i{color:#c886ff;font-size:13px}
+      .special-offer h2{margin:14px 0 9px;color:#fff;font:800 29px/1.2 Manrope,sans-serif}
+      .offer-lead{color:#c7bbd2;font-size:17px;line-height:1.6}
+      .offer-product{position:relative;width:100%;height:235px;margin-top:15px;display:grid;place-items:center;overflow:visible;border:0;border-radius:0;background:transparent;box-shadow:none}
+      .offer-product:after,.offer-product:before{content:none}
+      .offer-product img{position:relative;z-index:1;display:block!important;width:74%;height:100%;padding:4px 0;object-fit:contain;object-position:center;filter:drop-shadow(0 16px 18px rgba(0,0,0,.38));transition:transform .45s ease}
+      .special-offer.in-view .offer-product img{animation:productFloat 4s ease-in-out infinite}
+      .offer-product img[style*="display: none"]{display:none!important}
+      .offer-copy{margin-top:16px;padding:17px 8px 2px;text-align:center}.offer-copy h3{color:#fff;font:800 22px/1.25 Manrope,sans-serif}.offer-copy p{margin-top:6px;color:#c9bdd3;font-size:14px;line-height:1.5}.offer-copy strong{color:#d7b9ff}
+      .offer-benefits{display:grid;gap:11px;margin-top:23px}
+      .offer-benefit{position:relative;display:grid;grid-template-columns:50px minmax(0,1fr);align-items:center;gap:13px;padding:15px;overflow:hidden;border:1px solid rgba(183,122,255,.24);border-radius:17px;background:linear-gradient(110deg,rgba(255,255,255,.065),rgba(141,77,255,.045))}
+      .offer-benefit{opacity:0;transform:translateX(-32px) scale(.97);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.25,1),border-color .3s ease,background .3s ease}
+      .offer-benefit:nth-child(even){transform:translateX(32px) scale(.97)}
+      .special-offer.in-view .offer-benefit{opacity:1;transform:translateY(0) scale(1)}
+      .special-offer.in-view .offer-benefit:nth-child(2){transition-delay:.14s}
+      .special-offer.in-view .offer-benefit:nth-child(3){transition-delay:.28s}
+      .offer-benefit:before{content:"";position:absolute;top:-35%;left:-55%;width:36%;height:170%;transform:skewX(-22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.13),transparent)}
+      .special-offer.in-view .offer-benefit:before{animation:offerShine 3.8s 1s ease-in-out infinite}
+      .offer-benefit:hover{border-color:rgba(210,181,255,.55);background:rgba(141,77,255,.11)}
+      .offer-icon{position:relative;z-index:1;width:52px;height:52px;display:grid;place-items:center;border:2px solid #e7d2ff;border-radius:16px 16px 16px 5px;background:linear-gradient(135deg,#b86eff,#6328cb);color:#fff;font-size:20px;transform:rotate(-3deg);box-shadow:0 9px 20px rgba(0,0,0,.28),inset 0 0 0 3px rgba(255,255,255,.1),0 0 20px rgba(141,77,255,.18)}
+      .offer-icon:after{content:"";position:absolute;right:-4px;bottom:-4px;width:11px;height:11px;border-right:2px solid #e7d2ff;border-bottom:2px solid #e7d2ff;border-radius:0 0 4px 0;background:#7d38df;transform:rotate(6deg)}
+      .special-offer.in-view .offer-icon{animation:iconPulse 2.6s 1.2s ease-in-out infinite}
+      .offer-benefit strong{color:#fff;font-size:16px;line-height:1.35}
+      .offer-code{color:#d9bfff;font-family:Manrope,sans-serif;letter-spacing:.5px}
+      .happy-customers{position:relative;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:14px;margin-top:18px;padding:17px;border:1px solid rgba(239,123,255,.34);border-radius:18px;background:linear-gradient(110deg,rgba(239,123,255,.12),rgba(141,77,255,.14));overflow:hidden}
+      .happy-customers:after{content:"";position:absolute;right:-28px;top:-28px;width:86px;height:86px;border-radius:50%;background:rgba(239,123,255,.08)}
+      .customer-avatars{display:flex}
+      .customer-avatars span{width:42px;height:42px;margin-left:-11px;display:grid;place-items:center;overflow:hidden;border:3px solid #21122e;border-radius:50%;background:linear-gradient(135deg,#b96cff,#7130dc);color:#fff;font-size:12px;box-shadow:0 6px 13px rgba(0,0,0,.28)}
+      .customer-avatars span:first-child{margin-left:0}
+      .customer-avatars img{display:block!important;width:100%;height:100%;object-fit:cover;object-position:center}
+      .customer-count{position:relative;z-index:1;color:#fff;font:800 24px/1.1 Manrope,sans-serif}
+      .customer-count small{display:block;margin-top:3px;color:#cabbd6;font:600 12px Hind,sans-serif;letter-spacing:.3px}
+      .customer-rating{display:flex;align-items:center;gap:7px;margin-top:7px}.customer-stars{display:flex;gap:2px;color:#d69aff;font-size:11px}.rating-text{color:#bcaec8;font:600 10px Manrope,sans-serif}
+      .special-offer .cta{display:flex;width:100%;margin-top:22px}
+      @keyframes offerShine{0%,55%{left:-55%}85%,100%{left:130%}}
+      @keyframes iconPulse{0%,100%{transform:scale(1);box-shadow:0 9px 20px rgba(0,0,0,.28),0 0 18px rgba(141,77,255,.18)}50%{transform:scale(1.07);box-shadow:0 9px 20px rgba(0,0,0,.28),0 0 27px rgba(183,122,255,.42)}}
+      @keyframes stickerFloat{0%,100%{transform:rotate(10deg) translateY(0)}50%{transform:rotate(7deg) translateY(-5px)}}
+      @keyframes productFloat{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
+      @media(prefers-reduced-motion:reduce){.offer-benefit{opacity:1;transform:none;transition:none}.special-offer.in-view .offer-benefit:before,.special-offer.in-view .offer-icon,.special-offer.in-view .offer-sticker,.special-offer.in-view .offer-product img{animation:none}}
+      .order{padding:50px 20px;background:radial-gradient(circle at 12% 8%,rgba(141,77,255,.24),transparent 34%),linear-gradient(165deg,#160c24,#08060c)}
+      .order .section-head h2{color:#fff}
+      .order .section-head a{display:block;margin-top:8px;color:#cbbfd6;font-size:15px}
+      .order .form-card{background:linear-gradient(145deg,#211532,#130d1d);border:1px solid rgba(183,122,255,.45);box-shadow:0 20px 44px rgba(0,0,0,.38),inset 0 0 0 4px rgba(141,77,255,.035)}
+      .order .field{margin-bottom:18px}
+      .order .field label{display:block;margin-bottom:8px;color:#fff;font-size:15px;font-weight:700;letter-spacing:.1px}
+      .order .field label:before{content:"";display:inline-block;width:7px;height:7px;margin-right:8px;border-radius:50%;background:#b77aff;box-shadow:0 0 9px rgba(183,122,255,.7)}
+      .order .field input{height:52px;border:1px solid rgba(210,181,255,.34);background:#0c0911;color:#fff;font-size:15px;caret-color:#b77aff}
+      .order .field input::placeholder{color:#887b95;opacity:1}
+      .order .field input:focus{border-color:#b77aff;box-shadow:0 0 0 3px rgba(141,77,255,.18)}
+      .order .err{color:#ffaaa5;font-size:12px}
+      .order .secure{color:#a99db5}
+      .order .secure strong{color:#d6baff}
+      .order .submit{min-height:52px;background:linear-gradient(110deg,#a65cff,#6328cb);font-size:15px;box-shadow:0 11px 24px rgba(97,39,197,.32)}
+      .reviews-section{padding:50px 20px;background:radial-gradient(circle at 90% 3%,rgba(141,77,255,.2),transparent 28%),linear-gradient(165deg,#100a19,#08060c)}
+      .reviews-section .section-head{text-align:left;margin-bottom:25px}
+      .reviews-section .section-head h2{font-size:30px}
+      .review-list{display:grid;gap:20px}
+      .review-card{display:grid;grid-template-columns:minmax(0,64%) minmax(0,36%);overflow:hidden;border:1px solid rgba(183,122,255,.34);border-radius:23px;background:linear-gradient(145deg,#1d132d,#100b18);box-shadow:0 16px 34px rgba(0,0,0,.3)}
+      .review-content{min-width:0;padding:20px 16px}
+      .review-person{margin-bottom:10px;color:#fff;font:700 19px/1.25 Manrope,sans-serif}
+      .review-meta{display:block;margin-top:4px;color:#a99db7;font:500 12px Hind,sans-serif}
+      .verified-review{display:none!important}
+      .review-title{margin-bottom:12px;color:#fff;font:700 18px/1.35 Hind,sans-serif}
+      .review-copy{color:#bdb2c8;font-size:14px;line-height:1.58}
+      .review-copy p+p{margin-top:10px}
+      .review-copy strong{color:#ddc9f7}
+      .review-stars{display:flex;gap:3px;margin-top:15px;color:#c987ff;font-size:13px}
+      .review-image{position:relative;min-height:100%;display:grid;place-items:center;overflow:hidden;border-left:1px solid rgba(183,122,255,.25);background:radial-gradient(circle,rgba(141,77,255,.26),#100a18);color:#9580ad;font:700 9px Manrope,sans-serif;letter-spacing:1px;text-align:center}
+      .review-image:before{content:"REAL PRODUCT IMAGE";position:absolute;width:80%;line-height:1.5}
+      .review-image img{position:relative;z-index:1;display:block!important;width:100%;height:100%;object-fit:cover;object-position:center}
+      .review-image img[style*="display: none"]{display:none!important}
+      .review-note{margin-top:18px;color:#8f849b;font-size:11px;line-height:1.5;text-align:center}
+      @media(max-width:380px){.review-card{grid-template-columns:minmax(0,66%) minmax(0,34%)}.review-content{padding:17px 13px}.review-title{font-size:16px}.review-copy{font-size:12px}.review-person{font-size:17px}}
+      .faq-section{padding:50px 20px;background:radial-gradient(circle at 12% 5%,rgba(141,77,255,.18),transparent 30%),linear-gradient(165deg,#0b0810,#140c20)!important;color:#fff!important}
+      .faq-section .section-head{text-align:left;margin-bottom:25px}
+      .faq-section .section-head h2{font-size:30px;color:#fff!important}
+      .faq-section .faq-list{display:grid;gap:12px}
+      .faq-section .faq{display:block!important;overflow:hidden;border:1px solid rgba(183,122,255,.38)!important;border-radius:17px;background:#171020!important;box-shadow:0 10px 23px rgba(0,0,0,.22);transition:border-color .25s ease,box-shadow .25s ease}
+      .faq-section .faq.open{border-color:rgba(183,122,255,.6);box-shadow:0 13px 27px rgba(0,0,0,.3),0 0 20px rgba(141,77,255,.08)}
+      .faq-section .faq button{min-height:68px;padding:16px 17px;background:#171020!important;color:#fff!important;font-size:16px;font-weight:700;line-height:1.4;align-items:center}
+      .faq-section .faq button span{flex:0 0 34px;width:34px;height:34px;display:grid;place-items:center;border:1px solid rgba(183,122,255,.35);border-radius:10px;background:rgba(141,77,255,.13);color:#d2b5ff;font:500 22px/1 Manrope,sans-serif;transition:transform .25s ease,background .25s ease}
+      .faq-section .faq.open button span{background:#8d4dff;color:#fff;transform:rotate(180deg)}
+      .faq-section .faq .answer{padding:0 17px 18px;border-top:1px solid transparent;background:#100b18!important;color:#d5cbdf!important;font-size:15px;line-height:1.65}
+      .faq-section .faq.open .answer{padding-top:15px;border-top-color:rgba(183,122,255,.27)}
+      #problem-section{padding:44px 20px;background:linear-gradient(160deg,#100b18,#08060c)}
+      #problem-section .section-head{text-align:left;margin-bottom:22px}
+      #problem-section .section-head h2{font-size:30px}
+      .symptom-grid{display:grid;grid-template-columns:1fr;gap:18px}
+      .symptom-card{position:relative;display:grid;grid-template-columns:48% 52%;min-height:220px;overflow:hidden;border:1px solid rgba(183,122,255,.38);border-radius:23px;background:linear-gradient(125deg,#25153a,#100b18);box-shadow:0 16px 32px rgba(0,0,0,.3);transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+      .symptom-card:before{content:"";position:absolute;z-index:4;left:0;top:22px;bottom:22px;width:3px;border-radius:0 4px 4px 0;background:linear-gradient(#d59aff,#7433dc);box-shadow:0 0 12px rgba(183,122,255,.55)}
+      .symptom-card:hover{transform:translateY(-4px);border-color:rgba(210,181,255,.62);box-shadow:0 20px 38px rgba(0,0,0,.36),0 0 22px rgba(141,77,255,.08)}
+      .symptom-image{position:relative;z-index:1;width:100%;height:100%;min-height:220px;display:grid;place-items:center;overflow:hidden;background:linear-gradient(145deg,rgba(141,77,255,.25),rgba(255,255,255,.04));color:#a990cb;font-size:12px;clip-path:none}
+      .symptom-image:after{content:"";position:absolute;z-index:2;inset:0;background:linear-gradient(90deg,transparent 65%,rgba(16,11,24,.28)),linear-gradient(0deg,rgba(8,5,12,.18),transparent 50%);pointer-events:none}
+      .symptom-image:before{content:"IMAGE";position:absolute;z-index:0;letter-spacing:1.5px;font-weight:700}
+      .symptom-image img{position:relative;z-index:1;display:block!important;width:100%;height:100%;object-fit:cover}
+      .symptom-image img[style*="display: none"]{display:none!important}
+      .symptom-content{position:relative;z-index:2;min-width:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:24px 20px}
+      .symptom-content:before{content:none}
+      .symptom-content:after{content:"";position:absolute;right:-32px;bottom:-36px;width:105px;height:105px;border:1px solid rgba(183,122,255,.13);border-radius:50%;background:rgba(183,122,255,.055);box-shadow:0 0 0 18px rgba(141,77,255,.025)}
+      .symptom-number{position:relative;z-index:3;width:46px;height:38px;margin-bottom:12px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.17);border-radius:12px;background:linear-gradient(135deg,#b86fff,#6328ca);color:#fff;font:800 13px Manrope,sans-serif;box-shadow:0 8px 18px rgba(0,0,0,.3),0 0 16px rgba(141,77,255,.2)}
+      .symptom-content h3{position:relative;z-index:3;margin:0 0 7px;color:#fff;font:700 20px/1.28 Hind,sans-serif}
+      .symptom-content p{position:relative;z-index:3;margin:0;color:#cfc4dc;font:500 14px/1.5 Hind,sans-serif}
+      @media(max-width:360px){.symptom-card{grid-template-columns:44% 56%;min-height:215px}.symptom-image{min-height:215px}.symptom-content{padding:18px 13px}.symptom-number{width:42px;height:34px;margin-bottom:10px}.symptom-content h3{font-size:17px}.symptom-content p{font-size:13px;line-height:1.42}}
+      .problem-summary{display:flex;gap:10px;margin-top:18px;padding:16px;border:1px solid rgba(239,123,255,.3);border-radius:15px;background:linear-gradient(100deg,rgba(239,123,255,.12),rgba(141,77,255,.11));color:#fff;font-weight:700}
+      .problem-summary span{color:#d2b5ff;font-size:20px;line-height:1}
+      #product-intro{padding:48px 20px;background:radial-gradient(circle at 85% 8%,rgba(141,77,255,.24),transparent 34%),#09070d}
+      #product-intro .product-panel{padding:24px 17px;border:1px solid rgba(183,122,255,.34);background:linear-gradient(145deg,#211337,#100b1a)}
+      #product-intro .section-head{text-align:left;margin-bottom:20px}
+      #product-intro .section-head h2{font-size:29px}
+      #product-intro .section-head p{font-family:Hind,sans-serif;font-size:18px;line-height:1.45;color:#d2b5ff}
+      #product-intro .product-img{position:relative;display:grid!important;place-items:center;width:100%;height:330px;margin:0 0 22px;border:1px dashed rgba(183,122,255,.48);border-radius:22px;background:radial-gradient(circle at 50% 48%,rgba(141,77,255,.28),transparent 45%),linear-gradient(145deg,#170e26,#0b0711);overflow:hidden;box-shadow:inset 0 0 35px rgba(141,77,255,.08)}
+      #product-intro .product-img:before{content:"CAPSULE PRODUCT IMAGE";position:absolute;color:#8f79ae;font:700 11px Manrope,sans-serif;letter-spacing:1.4px}
+      #product-intro .product-img img{position:relative;z-index:1;display:block!important;width:100%;height:100%;padding:0;object-fit:cover;object-position:center;background:transparent}
+      #product-intro .product-img img[style*="display: none"]{display:none!important}
+      #product-intro .product-intro{padding:16px;border-left:3px solid #9f5cff;border-radius:0 13px 13px 0;background:rgba(141,77,255,.09);font-size:16px;line-height:1.65}
+      #product-intro .product-benefits{margin-top:18px;gap:11px}
+      #product-intro .product-benefits li{min-height:96px;padding:42px 12px 13px;border-color:rgba(183,122,255,.25);background:rgba(255,255,255,.05)}
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="banner" aria-label="GathHeal awareness banner">
+        <img src="images/banner.avif" alt="शरीर में बनी गांठ के बारे में awareness banner" loading="eager" fetchpriority="high" decoding="async">
+      </section>
+
+      <section class="light" id="problem-section">
+        <div class="section-head">
+          <div class="kicker">समस्या को समझें</div>
+          <h2>गांठ के सामान्य संकेत</h2>
+        </div>
+        <div class="symptom-grid">
+          <article class="symptom-card"><div class="symptom-image"><img src="images/problem1.avif" alt="शरीर पर उभार" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="symptom-content"><span class="symptom-number">01</span><h3>शरीर पर उभार</h3><p>त्वचा के नीचे असामान्य उभार दिखाई देना।</p></div></article>
+          <article class="symptom-card"><div class="symptom-image"><img src="images/problem2.avif" alt="आकार में बदलाव" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="symptom-content"><span class="symptom-number">02</span><h3>आकार में बदलाव</h3><p>गांठ का धीरे-धीरे बड़ी या अलग महसूस होना।</p></div></article>
+          <article class="symptom-card"><div class="symptom-image"><img src="images/problem3.avif" alt="भारीपन या दबाव" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="symptom-content"><span class="symptom-number">03</span><h3>भारीपन या दबाव</h3><p>प्रभावित हिस्से में खिंचाव या दबाव महसूस होना।</p></div></article>
+          <article class="symptom-card"><div class="symptom-image"><img src="images/problem4.avif" alt="छूने पर दर्द" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="symptom-content"><span class="symptom-number">04</span><h3>छूने पर दर्द</h3><p>गांठ को दबाने या छूने पर तकलीफ़ होना।</p></div></article>
+          <article class="symptom-card"><div class="symptom-image"><img src="images/problem2.avif" alt="Movement में परेशानी" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="symptom-content"><span class="symptom-number">05</span><h3>Movement में परेशानी</h3><p>प्रभावित अंग को हिलाने-डुलाने में असहजता होना।</p></div></article>
+          <article class="symptom-card"><div class="symptom-image"><img src="images/problem1.avif" alt="गंभीर होने की चिंता" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="symptom-content"><span class="symptom-number">06</span><h3>गंभीर होने की चिंता</h3><p>गांठ को लेकर मन में लगातार डर और बेचैनी रहना।</p></div></article>
+          </div>
+        <div class="problem-summary"><span></span><div>सही देखभाल के लिए गांठ की प्रकृति समझना ज़रूरी है।</div></div>
+      </section>
+
+      <section class="dark product-wrap" id="product-intro">
+        <div class="product-panel">
+          <div class="section-head">
+            <h2>GathHeal Capsules</h2>
+            <p>गांठ की देखभाल के लिए Ayurvedic Herbal Support</p>
+          </div>
+          <div class="product-img">
+            <img src="images/capsule.avif" alt="GathHeal Capsules product" loading="lazy" decoding="async" onerror="this.style.display='none'" />
+          </div>
+          <p class="product-intro"><strong>GathHeal Capsules चुनिंदा Ayurvedic herbs से तैयार herbal formulation है, जिसे healthy diet, active lifestyle और expert guidance के साथ daily wellness routine में शामिल किया जा सकता है।</strong></p>
+          <ul class="product-benefits">
+            <li>चुनिंदा Ayurvedic herbs</li>
+            <li>सुविधाजनक capsule format</li>
+            <li>Daily wellness support</li>
+            <li>Diet और lifestyle के अनुकूल</li>
+          </ul>
+          <a class="product-learn" href="#how-it-works">WELLNESS SUPPORT जानें <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+      </section>
+
+      <section id="how-it-works"
+        class="dark"
+        style="border-top: 1px solid rgba(239, 199, 111, 0.3)"
+      >
+        <div class="section-head">
+          <h2>यह कैसे काम करता है?</h2>
+          <p>4 तरीकों से Ayurvedic Wellness Support</p>
+        </div>
+        <div class="how-flow">
+          <article class="how-step"><div class="how-card-img"><img src="images/work1.avif" alt="Inflammation Support" loading="lazy" decoding="async" onerror="this.style.display='none'" /></div><span class="how-node">01</span><div class="how-card-body"><div><h3>Inflammation Support</h3></div></div></article>
+          <article class="how-step"><div class="how-card-img"><img src="images/work2.avif" alt="Comfort Support" loading="lazy" decoding="async" onerror="this.style.display='none'" /></div><span class="how-node">02</span><div class="how-card-body"><div><h3>Comfort Support</h3></div></div></article>
+          <article class="how-step"><div class="how-card-img"><img src="images/work3.avif" alt="Natural Recovery Support" loading="lazy" decoding="async" onerror="this.style.display='none'" /></div><span class="how-node">03</span><div class="how-card-body"><div><h3>Natural Recovery Support</h3></div></div></article>
+          <article class="how-step"><div class="how-card-img"><img src="images/work4.avif" alt="Immunity Support" loading="lazy" decoding="async" onerror="this.style.display='none'" /></div><span class="how-node">04</span><div class="how-card-body"><div><h3>Immunity Support</h3></div></div></article>
+        </div>
+        <div class="quote-box" style="margin-top:24px;text-align:left">
+          <p style="font-family:Hind,sans-serif;font-size:15px"><strong>महत्वपूर्ण:</strong> GathHeal medical diagnosis या treatment का विकल्प नहीं है। गांठ के लिए medical evaluation ज़रूरी है।</p>
+        </div>
+      </section>
+
+      <section class="expert-section">
+        <div class="section-head">
+          <h2>Expert Opinion</h2>
+          <p>👨‍⚕️ Doctor Recommendation</p>
+        </div>
+        <article class="expert-card">
+          <div class="expert-photo">
+            <img src="images/doctor.avif" alt="Ayurveda Doctor" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://ayurvanicapsules.com/vani/Image/Doctor.avif'">
+          </div>
+          <div class="expert-content">
+            <h3>आयुर्वेद विशेषज्ञ</h3>
+            <div class="expert-quote">GathHeal Capsules का नियमित उपयोग शरीर की natural recovery, comfort और overall wellness को support करने में सहायक हो सकता है। बेहतर परिणामों के लिए इसे सही diet, healthy lifestyle और expert guidance के साथ अपनी daily routine में शामिल करें।</div>
+            <div class="expert-sign">— Dr. Uttam Gangwar</div>
+          </div>
+        </article>
+      </section>
+
+      <section class="ingredients-section">
+        <div class="section-head">
+          <div class="kicker">INGREDIENTS</div>
+          <h2>GathHeal में शामिल चुनिंदा Ayurvedic Herbs</h2>
+        </div>
+        <div class="herbs">
+          <article class="herb">
+            <div class="herb-img"><img src="images/ing1.avif" alt="Kalmegh herb" loading="lazy" decoding="async" onerror="this.style.display='none'" /></div>
+            <div class="herb-content">
+              <h3>🌱 Kalmegh</h3>
+            <p>Traditional Ayurvedic preparations में उपयोग की जाने वाली botanical herb।</p>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-img"><img src="images/ing2.avif" alt="Chirchita herb" loading="lazy" decoding="async" onerror="this.style.display='none'" /></div>
+            <div class="herb-content">
+              <h3>🌿 Chirchita</h3>
+            <p>Traditional herbal formulations में उपयोग की जाने वाली botanical ingredient।</p>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-img"><img src="images/ing3.avif" alt="Pashanbhed herb" loading="lazy" decoding="async" onerror="this.style.display='none'" /></div>
+            <div class="herb-content">
+              <h3>🍃 Pashanbhed</h3>
+            <p>Ayurvedic herbal practice में प्रयुक्त एक पारंपरिक botanical ingredient।</p>
+            </div>
+          </article>
+          <article class="herb">
+            <div class="herb-img"><img src="images/ing4.avif" alt="Makoi Leaf herb" loading="lazy" decoding="async" onerror="this.style.display='none'" /></div>
+            <div class="herb-content">
+              <h3>🍀 Makoi Leaf</h3>
+            <p>Traditional Ayurvedic formulations में उपयोग किया जाने वाला herbal ingredient।</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="how-use-section">
+        <div class="section-head">
+          <div class="kicker">HOW TO USE</div>
+          <h2>3 आसान Steps</h2>
+          <p>एक simple और consistent daily routine</p>
+        </div>
+        <div class="routine-steps">
+          <article class="routine-card"><div class="routine-number">01</div><div class="routine-body"><h3>दिन में 2 बार</h3><p>सुबह और शाम नियमित रूप से सेवन करें।</p><div class="routine-tag">☀ सुबह + शाम ☾</div></div></article>
+          <article class="routine-card"><div class="routine-number">02</div><div class="routine-body"><h3>भोजन के बाद लें</h3><p>गुनगुने पानी या दूध के साथ सेवन करें।</p><div class="routine-tag">आसान Daily Routine</div></div></article>
+          <article class="routine-card"><div class="routine-number">03</div><div class="routine-body"><h3>नियमित सेवन करें</h3><p>बेहतर wellness support के लिए recommended course पूरा करें।</p><div class="routine-tag">Consistent Use</div></div></article>
+        </div>
+        </section>
+
+      <section class="trust-section">
+        <div class="section-head">
+          <div class="kicker">Quality Assurance</div>
+          <h2>हर Capsule में Quality और Care</h2>
+        </div>
+        <div class="trust-intro"><strong>सुरक्षित manufacturing standards और निर्धारित quality checks के साथ तैयार।</strong></div>
+        <div class="certificate-grid">
+          <article class="certificate-card"><div class="certificate-image"><img src="images/cert1.avif" alt="GMP Certificate" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="certificate-label">GMP Certified</div></article>
+          <article class="certificate-card"><div class="certificate-image"><img src="images/cert2.avif" alt="ISO Certificate" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="certificate-label">ISO Certified</div></article>
+          <article class="certificate-card"><div class="certificate-image"><img src="images/cert3.avif" alt="FSSAI Licence" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="certificate-label">FSSAI Licensed</div></article>
+          <article class="certificate-card"><div class="certificate-image"><img src="images/cert4.avif" alt="Quality Testing Certificate" loading="lazy" decoding="async" onerror="this.style.display='none'"></div><div class="certificate-label">Quality Tested</div></article>
+        </div>
+        <div class="trust-badges"><span>GMP Certified</span><span>ISO Certified</span><span>FSSAI Licensed</span><span>Quality Tested</span></div>
+      </section>
+
+      <section class="special-offer">
+        <div class="special-offer-box">
+          <div class="offer-sticker"><span><strong>10%</strong><small>OFF</small></span></div>
+          <div class="offer-fire"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Special Offer</div>
+          <div class="offer-product">
+            <img src="images/offer-product.avif" alt="GathHeal Ayurvedic Capsules special offer" loading="lazy" decoding="async" onerror="this.style.display='none'">
+          </div>
+          <div class="offer-copy"><h3>GathHeal Capsules</h3><p><strong>Ayurvedic Herbal Support</strong> के साथ अपनी daily wellness routine शुरू करें।</p></div>
+          <div class="offer-benefits">
+            <div class="offer-benefit"><span class="offer-icon"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></span><strong>पूरे भारत में <span class="offer-code">FREE Delivery</span></strong></div>
+            <div class="offer-benefit"><span class="offer-icon"><i class="fa-solid fa-tags" aria-hidden="true"></i></span><strong><span class="offer-code">GANTH10</span> कोड से Special Discount</strong></div>
+            <div class="offer-benefit"><span class="offer-icon"><i class="fa-solid fa-wallet" aria-hidden="true"></i></span><strong>Cash on Delivery उपलब्ध</strong></div>
+          </div>
+          <div class="happy-customers">
+            <div class="customer-avatars"><span><img src="images/cust1.avif" alt="Happy customer" loading="lazy"></span><span><img src="images/cust2.avif" alt="Happy customer" loading="lazy"></span><span><img src="images/cust3.avif" alt="Happy customer" loading="lazy"></span></div>
+            <div class="customer-count"><span data-count="82000">82,000</span>+<small>Happy Customers</small><div class="customer-rating"><span class="customer-stars" aria-label="5 star rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><span class="rating-text">4.9/5 Rating</span></div></div>
+          </div>
+          <a class="cta" href="#order-form">अभी Order करें <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </section>
+
+      <section class="order" id="order-form">
+        <div class="section-head">
+          <div class="kicker">Order Form</div>
+          <h2>🛒 GathHeal Order करें</h2>
+          <a>बस अपनी जानकारी भरें — हमारी टीम आपसे संपर्क करेगी</a>
+        </div>
+        <div class="form-card">
+          <form id="orderForm" method="post" action="https://script.google.com/macros/s/AKfycbyeE82FEPSsXx-D4xrtz1CCKRqrUphicTmQKZD1wYvon5MHZC-m28-pwMfN5sPWm9-R/exec" accept-charset="UTF-8" onsubmit="return submitForm(event);">
+            <input type="hidden" name="key" value="XQP4bdtEZkt3">
+            <input type="hidden" name="product" value="GathHeal Capsules">
+            <input type="hidden" name="source" value="GathHeal Website">
+            <input type="hidden" name="date" id="date">
+            <input type="hidden" name="event_id" id="event_id">
+            <input type="hidden" name="page_url" id="page_url">
+            <input type="hidden" name="referrer" id="referrer">
+            <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign">
+            <input type="hidden" name="utm_campaign_id"><input type="hidden" name="utm_adset"><input type="hidden" name="utm_adset_id">
+            <input type="hidden" name="utm_ad"><input type="hidden" name="utm_ad_id"><input type="hidden" name="utm_placement">
+            <input type="hidden" name="fbclid"><input type="hidden" name="fbc"><input type="hidden" name="fbp">
+            <div class="field">
+              <label for="name">आपका नाम *</label
+              ><input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+                pattern="[A-Za-z\u0900-\u097F ]+"
+                placeholder="अपना पूरा नाम दर्ज करें"
+              />
+              <div class="err" id="nameError">कृपया पूरा नाम दर्ज करें।</div>
+            </div>
+            <div class="field">
+              <label for="phone">मोबाइल नंबर *</label
+              ><input
+                type="tel"
+                id="phone"
+                name="phone"
+                maxlength="10"
+                inputmode="numeric"
+                autocomplete="tel"
+                pattern="[6-9][0-9]{9}"
+                required
+                placeholder="10 Digit Mobile Number"
+              />
+              <div class="err" id="phoneError">
+                कृपया सही 10 अंकों का नंबर दर्ज करें।
+              </div>
+            </div>
+            <button class="submit" id="submitBtn" type="submit">
+              GET GATHHEAL NOW
+            </button>
+            <div class="secure">
+              🔒 Your information is secure<br /><strong
+                >10% OFF | COD Available | Doctor Guidance</strong
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="section-head">
+          <div class="kicker">CUSTOMER STORIES</div>
+          <h2>GathHeal के साथ लोगों का Experience</h2>
+        </div>
+        <div class="review-list">
+          <article class="review-card"><div class="review-content"><div class="review-person">अमित वर्मा<span class="review-meta">Age 36 · Indore, MP</span></div><h3 class="review-title">“Office का काम करना आसान लगा”</h3><div class="review-copy"><p>Laptop पर काम करते समय बांह की गांठ में दर्द होता था। नियमित उपयोग के बाद discomfort कम महसूस हुआ।</p></div><div class="review-stars" aria-label="5 star review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div><div class="review-image"><img src="images/test1.avif" alt="अमित वर्मा के साथ GathHeal product" loading="lazy" decoding="async" onerror="this.style.display='none'"></div></article>
+          <article class="review-card"><div class="review-content"><div class="review-person">पूजा चौहान<span class="review-meta">Age 29 · Kota, Rajasthan</span></div><h3 class="review-title">“गर्दन का भारीपन पहले से कम लगा”</h3><div class="review-copy"><p>गर्दन की गांठ से दबाव महसूस होता था। नियमित उपयोग के बाद सूजन और भारीपन कम लगा।</p></div><div class="review-stars" aria-label="5 star review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div><div class="review-image"><img src="images/test2.avif" alt="पूजा चौहान के साथ GathHeal product" loading="lazy" decoding="async" onerror="this.style.display='none'"></div></article>
+          <article class="review-card"><div class="review-content"><div class="review-person">सुरेश पटेल<span class="review-meta">Age 45 · Ahmedabad, Gujarat</span></div><h3 class="review-title">“चलने-फिरने में अधिक आसानी हुई”</h3><div class="review-copy"><p>पैर की गांठ से चलने और सीढ़ियाँ चढ़ने में परेशानी थी। नियमित उपयोग के बाद खिंचाव कम महसूस हुआ।</p></div><div class="review-stars" aria-label="5 star review"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div><div class="review-image"><img src="images/test3.avif" alt="सुरेश पटेल के साथ GathHeal product" loading="lazy" decoding="async" onerror="this.style.display='none'"></div></article>
+        </div>
+      </section>
+
+
+      <section class="faq-section">
+        <div class="section-head">
+          <div class="kicker">FAQ SECTION</div>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq">
+            <button type="button">
+              क्या GathHeal safe है?<span>+</span>
+            </button>
+            <div class="answer">
+              GathHeal 100% आयुर्वेदिक ingredients से बना है और GMP Certified facility में manufactured है। किसी भी health condition के लिए उपयोग से पहले अपने doctor से परामर्श करें।
+            </div>
+          </div>
+          <div class="faq">
+            <button type="button">
+              कितने दिन में असर दिखेगा?<span>+</span>
+            </button>
+            <div class="answer">
+              हर व्यक्ति का शरीर अलग होता है, इसलिए results vary कर सकते हैं। Regular use के साथ बेहतर experience के लिए 2–3 महीने का course recommended है। Individual results may differ.
+            </div>
+          </div>
+          <div class="faq">
+            <button type="button">
+              कौन लोग इसे ले सकते हैं?<span>+</span>
+            </button>
+            <div class="answer">
+              यह 18 वर्ष से अधिक आयु के वयस्कों के लिए है। Pregnant/lactating women, किसी serious medical condition वाले या medication पर रहने वाले लोग उपयोग से पहले doctor से परामर्श अवश्य करें।
+            </div>
+          </div>
+          <div class="faq">
+            <button type="button">
+              क्या यह medical treatment की जगह ले सकता है?<span>+</span>
+            </button>
+            <div class="answer">
+              नहीं। GathHeal एक supportive Ayurvedic wellness supplement है—यह किसी medical treatment या doctor की सलाह का substitute नहीं है। हमेशा qualified healthcare professional से परामर्श लें।
+            </div>
+          </div>
+          <div class="faq">
+            <button type="button">क्या यह सभी age groups के लिए है?<span>+</span></button>
+            <div class="answer">यह general adult use के लिए है। किसी specific condition में expert advice लें और बच्चों के लिए उपयोग से पहले doctor से consult करें।</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="disclaimer">
+        Disclaimer: GathHeal किसी गांठ की diagnosis, emergency treatment या
+        guaranteed cure का replacement नहीं है। गांठ का कारण अलग-अलग हो सकता है
+        और किसी नई, तेजी से बढ़ने वाली, कठोर, दर्दनाक या unexplained गांठ के लिए
+        qualified healthcare professional से medical evaluation करवाना जरूरी है।
+        यह landing page herbal wellness support की जानकारी के लिए है। Individual
+        results may vary.
+      </div>
+      <div class="policy-links">
+        <button onclick="openModal('privacy')">Privacy</button
+        ><button onclick="openModal('terms')">Terms</button
+        ><button onclick="openModal('shipping')">Shipping</button
+        ><button onclick="openModal('cancel')">Cancellation</button
+        ><button onclick="openModal('contact')">Contact</button
+        ><button onclick="openModal('disclaimer')">Legal Disclaimer</button>
+      </div>
+
+      <div class="sticky" id="order-sticky">
+        <a href="#order-form">GET 10% OFF — ORDER NOW</a>
+      </div>
+      <div class="loading" id="loading">
+        <div class="loading-box">
+          <div class="spinner"></div>
+          <p>आपकी request भेजी जा रही है...</p>
+        </div>
+      </div>
+    </main>
+
+    <div class="pp-overlay" id="pp-overlay" onclick="closeIfOutside(event)">
+      <div class="pp-modal" id="pp-modal">
+        <button class="pp-close" onclick="closeModal()" aria-label="Close">
+          ×
+        </button>
+        <div id="pp-content"></div>
+      </div>
+    </div>
+
+    <script>
+      const $ = (s) => document.querySelector(s),
+        $$ = (s) => [...document.querySelectorAll(s)];
+
+      // Sticky order bar: hidden on the banner, visible from Problem onward, hidden on the order form.
+      const stickyOrder = $("#order-sticky");
+      const bannerSection = $(".banner");
+      const problemSection = bannerSection?.nextElementSibling || null;
+      const orderFormSection = $("#order-form");
+      let stickyFrame = 0;
+
+      function isInViewport(element) {
+        if (!element) return false;
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      }
+
+      function updateStickyOrder() {
+        stickyFrame = 0;
+        if (!stickyOrder) return;
+
+        const problemStarted =
+          problemSection && problemSection.getBoundingClientRect().top < window.innerHeight;
+        const hideOnBanner = isInViewport(bannerSection) && !problemStarted;
+        const hideOnOrderForm = isInViewport(orderFormSection);
+
+        stickyOrder.classList.toggle("show", !(hideOnBanner || hideOnOrderForm));
+      }
+
+      function scheduleStickyUpdate() {
+        if (!stickyFrame) stickyFrame = requestAnimationFrame(updateStickyOrder);
+      }
+
+      window.addEventListener("scroll", scheduleStickyUpdate, { passive: true });
+      window.addEventListener("resize", scheduleStickyUpdate);
+      updateStickyOrder();
+      $$(".faq button").forEach((b) =>
+        b.addEventListener("click", () => {
+          const f = b.parentElement;
+          f.classList.toggle("open");
+          b.querySelector("span").textContent = f.classList.contains("open")
+            ? "−"
+            : "+";
+        }),
+      );
+
+      const UTM_KEYS = [
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_campaign_id",
+        "utm_adset",
+        "utm_adset_id",
+        "utm_ad",
+        "utm_ad_id",
+        "utm_placement",
+      ];
+      function setHidden(n, v) {
+        const i = document.querySelector('#orderForm input[name="' + n + '"]');
+        if (i) i.value = v || "";
+      }
+      function cookie(n) {
+        const m = document.cookie.match(
+          new RegExp("(?:^|;\\s*)" + n + "=([^;]*)"),
+        );
+        return m ? decodeURIComponent(m[1]) : "";
+      }
+      function capture() {
+        const p = new URLSearchParams(location.search);
+        UTM_KEYS.forEach((k) =>
+          setHidden(k, p.get(k) || sessionStorage.getItem(k) || ""),
+        );
+        UTM_KEYS.forEach((k) => {
+          if (p.get(k))
+            try {
+              sessionStorage.setItem(k, p.get(k));
+            } catch (_) { /* storage may be unavailable */ }
+        });
+        const fbclid = p.get("fbclid") || "";
+        setHidden("fbclid", fbclid);
+        setHidden(
+          "fbc",
+          cookie("_fbc") || (fbclid ? "fb.1." + Date.now() + "." + fbclid : ""),
+        );
+        setHidden("fbp", cookie("_fbp"));
+      }
+      capture();
+
+      // Order form: allow only letters/spaces in name and valid Indian mobile digits.
+      const nameInput = $("#name");
+      const phoneInput = $("#phone");
+
+      nameInput?.addEventListener("input", () => {
+        nameInput.value = nameInput.value
+          .replace(/[^A-Za-z\u0900-\u097F ]/g, "")
+          .replace(/\s{2,}/g, " ")
+          .replace(/^\s+/, "");
+        err("nameError", false);
+      });
+
+      phoneInput?.addEventListener("input", () => {
+        let value = phoneInput.value.replace(/\D/g, "").slice(0, 10);
+        if (value && !/^[6-9]/.test(value)) value = value.slice(1);
+        phoneInput.value = value;
+        err("phoneError", false);
+      });
+
+      function validName(v) {
+        return /^[A-Za-z\u0900-\u097F]+(?: [A-Za-z\u0900-\u097F]+)+$/.test(
+          v.trim(),
+        );
+      }
+      function validPhone(v) {
+        return /^[6-9][0-9]{9}$/.test(v);
+      }
+      function err(id, on) {
+        document.getElementById(id)?.classList.toggle("show", on);
+      }
+      function eventId() {
+        return globalThis.crypto?.randomUUID
+          ? globalThis.crypto.randomUUID()
+          : "evt-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+      }
+      const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbyeE82FEPSsXx-D4xrtz1CCKRqrUphicTmQKZD1wYvon5MHZC-m28-pwMfN5sPWm9-R/exec";
+      const THANK_YOU_PAGE = "./Thankyou.html";
+      let formSubmitting = false;
+
+      async function submitForm(e) {
+        e.preventDefault();
+        if (formSubmitting) return false;
+
+        const form = document.getElementById("orderForm");
+        const submitBtn = document.getElementById("submitBtn");
+        const loading = document.getElementById("loading");
+        const name = nameInput.value.trim().replace(/\s+/g, " ");
+        const phone = phoneInput.value.replace(/\D/g, "");
+        const nameOk = validName(name);
+        const phoneOk = validPhone(phone);
+
+        err("nameError", !nameOk);
+        err("phoneError", !phoneOk);
+        if (!nameOk || !phoneOk) return false;
+
+        nameInput.value = name;
+        phoneInput.value = phone;
+        capture();
+        setHidden("date", new Intl.DateTimeFormat("en-IN", {
+          timeZone: "Asia/Kolkata", year: "numeric", month: "2-digit",
+          day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit",
+          hour12: false,
+        }).format(new Date()));
+        setHidden("event_id", eventId());
+        setHidden("page_url", location.href);
+        setHidden("referrer", document.referrer);
+
+        formSubmitting = true;
+        submitBtn.disabled = true;
+        submitBtn.textContent = "SUBMITTING...";
+        loading?.classList.add("show");
+
+        try {
+          const payload = new URLSearchParams();
+          new FormData(form).forEach((value, key) => payload.append(key, value));
+
+          await fetch(FORM_ENDPOINT, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+            body: payload.toString(),
+            keepalive: true,
+          });
+          window.location.assign(THANK_YOU_PAGE);
+        } catch (error) {
+          formSubmitting = false;
+          submitBtn.disabled = false;
+          submitBtn.textContent = "GET GATHHEAL NOW";
+          loading?.classList.remove("show");
+          alert("डेटा भेजा नहीं जा सका। कृपया internet connection जाँचकर दोबारा प्रयास करें।");
+        }
+        return false;
+      }
+      window.submitForm = submitForm;
+      const contents = {
+        privacy: `<div class="pp-mtitle"><i class="ti ti-shield-lock" aria-hidden="true"></i>Privacy Policy</div><div class="pp-mbadge">Last updated: June 2025</div><p class="pp-mpara">GathHeal आपकी personal information की सुरक्षा को सर्वोच्च प्राथमिकता देता है। जब आप order करते हैं तो हम निम्नलिखित जानकारी एकत्र करते हैं:</p><ul class="pp-mlist"><li>नाम, मोबाइल नंबर और delivery address</li><li>Payment details (encrypted और secure)</li><li>Order history और purchase records</li></ul><div class="pp-mhl">आपकी जानकारी किसी third-party को नहीं बेची जाती। इसका उपयोग केवल order processing और delivery के लिए किया जाता है।</div><p class="pp-mpara">हम industry-standard SSL encryption का उपयोग करते हैं। किसी भी privacy concern के लिए हमसे contact करें।</p>`,
+        terms: `<div class="pp-mtitle"><i class="ti ti-file-description" aria-hidden="true"></i>Terms & Conditions</div><div class="pp-mbadge">Please read carefully</div><p class="pp-mpara">GathHeal का उपयोग करके आप इन terms से सहमत होते हैं:</p><ul class="pp-mlist"><li>Product results व्यक्ति-दर-व्यक्ति अलग हो सकते हैं</li><li>यह product किसी बीमारी का इलाज नहीं है — wellness supplement है</li><li>18 वर्ष से कम आयु के व्यक्ति बिना guardian consent के order न करें</li><li>Fake/fraudulent orders के लिए legal action लिया जा सकता है</li><li>Product images केवल representation के लिए हैं</li></ul><div class="pp-mhl">GathHeal किसी भी समय बिना prior notice के prices, offers या terms बदलने का अधिकार रखता है।</div>`,
+        shipping: `<div class="pp-mtitle"><i class="ti ti-truck-delivery" aria-hidden="true"></i>Shipping Policy</div><div class="pp-mbadge">Free Delivery All India</div><p class="pp-mpara">हम पूरे India में FREE shipping प्रदान करते हैं। Delivery timeline:</p><ul class="pp-mlist"><li>Metro cities (Delhi, Mumbai, Bengaluru): 3–5 business days</li><li>Tier-2 / Tier-3 cities: 5–7 business days</li><li>Remote / rural areas: 7–10 business days</li></ul><div class="pp-mhl">Order confirm होने के 24–48 घंटे के अंदर tracking number SMS/WhatsApp पर भेजा जाएगा।</div><ul class="pp-mlist"><li>Delivery attempt 3 बार की जाएगी — उसके बाद order वापस आ जाएगा</li><li>Incorrect address की जिम्मेदारी customer की होगी</li></ul>`,
+        cancel: `<div class="pp-mtitle"><i class="ti ti-refresh" aria-hidden="true"></i>Cancellation Policy</div><div class="pp-mbadge">7-Day Easy Return</div><p class="pp-mpara">आप order confirm होने के <strong>24 घंटे के अंदर</strong> cancellation request कर सकते हैं।</p><ul class="pp-mlist"><li>Order dispatch होने के बाद cancellation संभव नहीं</li><li>Damaged या wrong product मिलने पर 7 दिन के अंदर complaint करें</li><li>Opened/used products return नहीं किए जाएंगे</li><li>Refund 5–7 business days में original payment method पर</li></ul><div class="pp-mhl">Return के लिए product original packaging में होना ज़रूरी है। Unboxing video होने पर claim जल्दी process होता है।</div>`,
+        contact: `<div class="pp-mtitle"><i class="ti ti-headset" aria-hidden="true"></i>Contact Us</div><p class="pp-mpara">हमारी team आपकी मदद के लिए Available है — सोमवार से शनिवार, सुबह 9 बजे से शाम 6 बजे तक।</p><div class="pp-cgrid"><div class="pp-citem"><i class="ti ti-phone" aria-hidden="true"></i><div class="pp-clbl">Call / WhatsApp</div><div class="pp-cval">+91 8860606078</div></div><div class="pp-citem"><i class="ti ti-mail" aria-hidden="true"></i><div class="pp-clbl">Email</div><div class="pp-cval">support@ssherbalindia.com</div></div><div class="pp-citem"><i class="ti ti-clock" aria-hidden="true"></i><div class="pp-clbl">Support Hours</div><div class="pp-cval">Mon–Sat 9am–6pm</div></div><div class="pp-citem"><i class="ti ti-message-circle" aria-hidden="true"></i><div class="pp-clbl">Response Time</div><div class="pp-cval">Within 24 hours</div></div></div>`,
+        disclaimer: `<div class="pp-mtitle"><i class="ti ti-alert-circle" aria-hidden="true"></i>Legal Disclaimer</div><div class="pp-mbadge">Important Notice</div><p class="pp-mpara">GathHeal एक natural wellness supplement है। इस product के बारे में निम्नलिखित बातें ध्यान में रखें:</p><ul class="pp-mlist"><li>यह product किसी भी बीमारी का diagnosis, treatment, cure या prevention नहीं करता</li><li>Results individual to individual अलग हो सकते हैं</li><li>यह product FSSAI guidelines के अनुसार एक food supplement है, drug नहीं</li><li>किसी भी medical condition में उपयोग से पहले doctor से परामर्श करें</li><li>Pregnant, nursing women या किसी chronic illness वाले व्यक्ति पहले physician से consult करें</li></ul><div class="pp-mhl">Website पर दिए गए statements को Food & Drug Administration द्वारा evaluate नहीं किया गया है। यह product किसी disease को diagnose, treat, cure या prevent करने के लिए नहीं है।</div><p class="pp-mpara">Product की images, descriptions और testimonials केवल illustrative purpose के लिए हैं। GathHeal किसी भी indirect या consequential loss के लिए उत्तरदायी नहीं है।</p>`,
+      };
+      // Policy modal does not modify body/html positioning or overflow.
+      // The fixed overlay itself blocks background interaction, so the page never reflows or shakes.
+      function lockPage() {}
+      function unlockPage() {}
+      function openModal(k) {
+        if (!contents[k]) return;
+        $("#pp-content").innerHTML = contents[k];
+        lockPage();
+        $("#pp-overlay").classList.add("show");
+        $("#pp-modal").scrollTo(0, 0);
+      }
+      function closeModal() {
+        if (!$("#pp-overlay").classList.contains("show")) return;
+        $("#pp-overlay").classList.remove("show");
+        unlockPage();
+      }
+      function closeIfOutside(e) {
+        if (e.target === $("#pp-overlay")) closeModal();
+      }
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+      $("#pp-overlay").addEventListener(
+        "wheel",
+        (e) => {
+          if (!$("#pp-modal").contains(e.target)) e.preventDefault();
+        },
+        { passive: false },
+      );
+      $("#pp-overlay").addEventListener(
+        "touchmove",
+        (e) => {
+          if (!$("#pp-modal").contains(e.target)) e.preventDefault();
+        },
+        { passive: false },
+      );
+
+      // Reveal the offer benefits and count happy customers when the section enters view.
+      const specialOffer = document.querySelector(".special-offer");
+      const customerCounter = specialOffer?.querySelector("[data-count]");
+      function animateCustomerCount() {
+        if (!customerCounter || customerCounter.dataset.animated) return;
+        customerCounter.dataset.animated = "true";
+        const target = Number(customerCounter.dataset.count);
+        const duration = 1500;
+        const started = performance.now();
+        function tick(now) {
+          const progress = Math.min((now - started) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          customerCounter.textContent = Math.floor(target * eased).toLocaleString("en-IN");
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+      if (specialOffer) {
+        if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          specialOffer.classList.add("in-view");
+          animateCustomerCount();
+        } else {
+          const offerObserver = new IntersectionObserver(
+            ([entry], observer) => {
+              if (!entry.isIntersecting) return;
+              specialOffer.classList.add("in-view");
+              animateCustomerCount();
+              observer.disconnect();
+            },
+            { threshold: 0.22 },
+          );
+          offerObserver.observe(specialOffer);
+        }
+      }
+      window.openModal = openModal;
+      window.closeModal = closeModal;
+      window.closeIfOutside = closeIfOutside;
+    </script>
+  </body>
+</html>
